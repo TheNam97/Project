@@ -1,11 +1,4 @@
-.content{
-    text-align: center;
-    background-color: rgb(235, 239, 241);
-}
-input.ng-invalid.ng-touched,
-textarea.ng-invalid.ng-touched{
-  border: 1px solid red;
-}
+
 .row{
     margin: 5px 0px;
 }

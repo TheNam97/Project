@@ -17,26 +17,9 @@ export class ProductListComponent {
 
   /////////////
   openDialogEdit(row: PeriodicElement){
-    //this.toEdit?.getData(a)
-    // this.dataToEdit(a);
-
-    // const dialogConfig = new MatDialogConfig();
-    // dialogConfig.disableClose = false;
-    // dialogConfig.autoFocus=true
-    // dialogConfig.width = "50%"
-    // dialogConfig ="center"
-    // const dialogRef = this.dialog.open(ProductEditComponent,{
-    //   disableClose=false,
-    //   width="50%",
-    //   data=row
-    // })
-    // const dialogRef = this.dialog.open(ProductAddComponent, {
-    //   width: '250px'   
-    // });
     console.log('Row clicked', row);
     const dialog = this._dialog.open(ProductEditComponent, {
       width: '40%',
-      // Can be closed only by clicking the close button
       disableClose: false,
       autoFocus:true,
       data: row
