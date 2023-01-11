@@ -37,12 +37,10 @@ export class ProductListComponent {
     const dialog = this._dialog.open(ProductEditComponent, {
       width: '40%',
       // Can be closed only by clicking the close button
-      disableClose: true,
+      disableClose: false,
       autoFocus:true,
       data: row
     });
-
-
 
     dialog.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
